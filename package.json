@@ -1,0 +1,23 @@
+{
+  "name": "experimentstats",
+  "version": "1.0.0",
+  "description": "Get files belonging to a set of experiments.",
+  "main": "main.js",
+  "bin": {
+    "expstats": "./main.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.0",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Forrest Tanaka",
+  "license": "ISC"
+}
