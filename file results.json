@@ -1,0 +1,47 @@
+{
+    "file_type": {
+        "bam": 20,
+        "fastq": 16,
+        "tsv": 2,
+        "hic": 3,
+        "txt": 1,
+        "bigBed bedMethyl": 1,
+        "bigWig": 6,
+        "rcc": 2,
+        "idat": 2,
+        "sra": 1,
+        "bed narrowPeak": 1,
+        "bigBed narrowPeak": 1,
+        "csqual": 2,
+        "csfasta": 3
+    },
+    "assembly": {
+        "mm9": 7,
+        "hg19": 26,
+        "mm10": 1,
+        "GRCh38": 1
+    },
+    "output_type": {
+        "alignments": 19,
+        "reads": 22,
+        "gene quantifications": 2,
+        "chromatin interactions": 2,
+        "mapping quality thresholded chromatin interactions": 1,
+        "restriction enzyme site locations": 1,
+        "sequence alignability": 1,
+        "signal of all reads": 7,
+        "reporter code counts": 4,
+        "optimal idr thresholded peaks": 2
+    },
+    "lab.title": {
+        "J. Michael Cherry, Stanford": 25,
+        "Ali Mortazavi, UCI": 4,
+        "Michael Snyder, Stanford": 12,
+        "Richard Myers, HAIB": 1,
+        "Robert Waterston, UW": 18,
+        "John Stamatoyannopoulos, UW": 1
+    },
+    "status": {
+        "released": 61
+    }
+}

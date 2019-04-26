@@ -14,5 +14,7 @@ module.exports = {
   },
   rules: {
     indent: ['error', 4, { ignoredNodes: ['ConditionalExpression'] }],
+    'max-len': 0,
+    'no-console': 0,
   },
 };

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-const fetch = require('node-fetch');
-const fs = require('fs');
+const columnify = require('columnify');
 const program = require('commander');
+const fs = require('fs');
+const fetch = require('node-fetch');
 
 
 /**
@@ -127,14 +128,16 @@ program
 
 let keyFileData;
 let fileFields;
-readKeyfile(program.keyfile).then((resultJson) => {
+const cartDataPromise = readKeyfile(program.keyfile).then((resultJson) => {
     keyFileData = resultJson;
     return readExperimentsFile(program.experiments);
 }).then((experimentInfo) => {
     const auth = keypairToAuth(keyFileData[program.key].key, keyFileData[program.key].secret);
     fileFields = experimentInfo.fields;
     return cartQuery(experimentInfo.experiments, experimentInfo.fields, keyFileData[program.key].server, auth);
-}).then((cartData) => {
+});
+
+const filePropCountPromise = cartDataPromise.then((cartData) => {
     // Make an array of all partial file objects returned in search results.
     const files = [];
     cartData['@graph'].forEach((experiment) => {
@@ -167,6 +170,13 @@ readKeyfile(program.keyfile).then((resultJson) => {
         });
     });
     return filePropCounts;
-}).then((filePropCounts) => {
-    console.log(filePropCounts);
+});
+
+filePropCountPromise.then((filePropCounts) => {
+    Object.keys(filePropCounts).forEach((fileProp) => {
+        console.log(`${fileProp}:`);
+        const singlePropCounts = filePropCounts[fileProp];
+        console.log(columnify(singlePropCounts));
+        console.log('\n');
+    });
 });
