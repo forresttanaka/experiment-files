@@ -9,6 +9,7 @@
     "experiments": [
         "/experiments/ENCSR001ADI/",
         "/experiments/ENCSR000AEM/",
+        "/experiments/ENCSR000AES/",
         "/experiments/ENCSR000AJK/",
         "/experiments/ENCSR000AER/",
         "/experiments/ENCSR000ACY/",
@@ -27,6 +28,7 @@
         "/experiments/ENCSR008EPI/",
         "/experiments/ENCSR374GSQ/",
         "/experiments/ENCSR999NOF/",
+        "/experiments/ENCSR002CON/",
         "/experiments/ENCSR007EPI/",
         "/experiments/ENCSR751STU/",
         "/experiments/ENCSR001EPI/",
@@ -35,6 +37,7 @@
         "/experiments/ENCSR009EPI/",
         "/experiments/ENCSR002EPI/",
         "/experiments/ENCSR001ACT/",
+        "/experiments/ENCSR787DGZ/",
         "/experiments/ENCSR751ISO/",
         "/experiments/ENCSR003EPI/",
         "/experiments/ENCSR000DZQ/",
@@ -48,6 +51,7 @@
         "/experiments/ENCSR001REP/",
         "/experiments/ENCSR003REP/",
         "/experiments/ENCSR006EPI/",
+        "/experiments/ENCSR706IDL/",
         "/experiments/ENCSR751YPU/",
         "/experiments/ENCSR751STR/",
         "/experiments/ENCSR751STT/"

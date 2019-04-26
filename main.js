@@ -176,7 +176,7 @@ filePropCountPromise.then((filePropCounts) => {
     Object.keys(filePropCounts).forEach((fileProp) => {
         console.log(`${fileProp}:`);
         const singlePropCounts = filePropCounts[fileProp];
-        console.log(columnify(singlePropCounts));
+        console.log(columnify(singlePropCounts, { config: { value: { align: 'right' } } }));
         console.log('\n');
     });
 });
